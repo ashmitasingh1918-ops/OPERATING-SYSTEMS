@@ -11,13 +11,12 @@ Each lab sheet demonstrates **core OS concepts** through Python simulations invo
 ### -Lab_Sheet_1/
 - process_management.py
 - output.txt
-- report.pdf
 - README.md
 ### -Lab_Sheet_2/
 - system_startup_simulation.py
 - process_log.txt
-- report.pdf
-- README.md
+
+
 ### README.md ← (this main file)
 
 ---
