@@ -1,0 +1,137 @@
+%                                                    
+lavyakumarberiwal@Lavyas-MacBook-Air Lab sheet 1 % /u
+sr/local/bin/python3 "/Users/lavyakumarberiwal/Lab sh
+eet 1/process_management.py"
+=== OS LAB EXPERIMENT: PROCESS MANAGEMENT ===
+Select a Task to Run:
+1. Process Creation
+2. Command Execution
+3. Zombie & Orphan Simulation
+4. /proc Inspection
+5. Process Prioritization
+
+Enter task number (1-5): 1
+
+--- TASK 1: Process Creation Utility ---
+
+Child 1: PID=3619, Parent PID=3614
+Custom Message: Hello from Child 1!
+Child 2: PID=3620, Parent PID=3614
+Custom Message: Hello from Child 2!
+Child 3: PID=3621, Parent PID=3614
+Custom Message: Hello from Child 3!
+All child processes have finished.
+
+lavyakumarberiwal@Lavyas-MacBook-Air Lab sheet 1 % /usr/local/bin/python3 "/Users/lavyakumarberiwal/Lab sheet 1/process_management.py"
+=== OS LAB EXPERIMENT: PROCESS MANAGEMENT ===
+Select a Task to Run:
+1. Process Creation
+2. Command Execution
+3. Zombie & Orphan Simulation
+4. /proc Inspection
+5. Process Prioritization
+
+Enter task number (1-5): 2
+
+--- TASK 2: Command Execution Using exec() ---
+
+
+Executing 'ls' in child PID=3757
+process_management.py
+
+Executing 'date' in child PID=3758
+Mon Oct  6 21:24:14 IST 2025
+
+Executing 'ps' in child PID=3759
+  PID TTY           TIME CMD
+ 1331 ttys001    0:00.01 /bin/zsh
+ 1333 ttys003    0:00.02 /bin/zsh -i
+ 1334 ttys005    0:00.02 /bin/zsh -i
+ 1335 ttys007    0:00.02 /bin/zsh -i
+ 1336 ttys009    0:00.02 /bin/zsh -i
+ 1337 ttys011    0:00.02 /bin/zsh -i
+ 1339 ttys013    0:00.02 /bin/zsh -i
+ 1341 ttys015    0:00.02 /bin/zsh -i
+ 1342 ttys017    0:00.02 /bin/zsh -i
+ 1344 ttys019    0:00.02 /bin/zsh -i
+ 1345 ttys021    0:00.02 /bin/zsh -i
+ 1346 ttys023    0:00.02 /bin/zsh -i
+ 1347 ttys025    0:00.02 /bin/zsh -i
+ 1348 ttys027    0:00.02 /bin/zsh -i
+ 1350 ttys029    0:00.02 /bin/zsh -i
+ 1354 ttys031    0:00.02 /bin/zsh -i
+ 1355 ttys033    0:00.02 /bin/zsh -i
+ 1357 ttys035    0:00.02 /bin/zsh -i
+ 1358 ttys037    0:00.02 /bin/zsh -i
+ 1361 ttys039    0:00.02 /bin/zsh -i
+ 1362 ttys041    0:00.02 /bin/zsh -i
+ 1363 ttys043    0:00.02 /bin/zsh -i
+ 1364 ttys045    0:00.02 /bin/zsh -i
+ 1365 ttys047    0:00.02 /bin/zsh -i
+ 1367 ttys049    0:00.02 /bin/zsh -i
+ 1370 ttys051    0:00.02 /bin/zsh -i
+ 1372 ttys053    0:00.02 /bin/zsh -i
+ 1373 ttys055    0:00.02 /bin/zsh -i
+ 1374 ttys057    0:00.02 /bin/zsh -i
+ 1375 ttys059    0:00.02 /bin/zsh -i
+ 1381 ttys061    0:00.02 /bin/zsh -i
+ 3391 ttys063    0:00.01 /bin/zsh -i
+ 3477 ttys065    0:00.02 /bin/zsh -il
+ 3754 ttys065    0:00.03 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Users/lavyakumarberiwal/Lab she
+All commands executed successfully.
+
+lavyakumarberiwal@Lavyas-MacBook-Air Lab sheet 1 % /usr/local/bin/python3 "/Users/lavyakumarberiwal/Lab sheet 1/process_management.py"
+=== OS LAB EXPERIMENT: PROCESS MANAGEMENT ===
+Select a Task to Run:
+1. Process Creation
+2. Command Execution
+3. Zombie & Orphan Simulation
+4. /proc Inspection
+5. Process Prioritization
+
+Enter task number (1-5): 3
+
+--- TASK 3: Zombie and Orphan Processes ---
+
+Parent PID=3889 sleeping (not waiting)... Check 'ps -el | grep defunct'
+Child (Zombie) exiting immediately...
+Parent exiting early, child will become orphan...
+lavyakumarberiwal@Lavyas-MacBook-Air Lab sheet 1 % Orphan child running. New Parent PID=1
+/usr/local/bin/python3 "/Users/lavyakumarberiwal/Lab sheet 1/process_management.py"
+=== OS LAB EXPERIMENT: PROCESS MANAGEMENT ===
+Select a Task to Run:
+1. Process Creation
+2. Command Execution
+3. Zombie & Orphan Simulation
+4. /proc Inspection
+5. Process Prioritization
+
+Enter task number (1-5): 4
+
+--- TASK 4: Inspecting Process Info from /proc ---
+
+Enter a PID to inspect: 1
+Error reading process info: [Errno 2] No such file or directory: '/proc/1/status'
+lavyakumarberiwal@Lavyas-MacBook-Air Lab sheet 1 % /usr/local/bin/python3 "/Users/lavyakumarberiwal/Lab sheet 1/process_management.py"
+=== OS LAB EXPERIMENT: PROCESS MANAGEMENT ===
+Select a Task to Run:
+1. Process Creation
+2. Command Execution
+3. Zombie & Orphan Simulation
+4. /proc Inspection
+5. Process Prioritization
+
+Enter task number (1-5): 5
+
+--- TASK 5: Process Prioritization (nice values) ---
+
+Child PID=4170 running with nice value=0
+Child PID=4171 running with nice value=5
+Child PID=4172 running with nice value=10
+Child PID=4170 finished in 0.30s
+Child PID=4171 finished in 0.31s
+Child PID=4172 finished in 0.31s
+
+All child processes with different priorities have completed.
+
+lavyakumarberiwal@Lavyas-MacBook-Air Lab sheet 1 % 
