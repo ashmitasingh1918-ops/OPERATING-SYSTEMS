@@ -2,7 +2,7 @@
 # EXPERIMENT TITLE: Process Creation and Management Using Python OS Module
 # COURSE CODE: ENCS351 - Operating System
 # PROGRAM: B.Tech CSE 
-# AUTHOR: Lavya Kumar
+# AUTHOR: Ashmita
 # -------------------------------------------------------------
 
 import os
